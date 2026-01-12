@@ -8,57 +8,65 @@
 </head>
 <body>
 
-<!-- COVER -->
+<!-- ================= COVER ================= -->
 <section class="cover">
-  <h4>Undangan Pernikahan</h4>
-  <h1>Andi & Siti</h1>
-  <p>Sabtu, 20 Juli 2026</p>
-  <button onclick="openInvitation()">Buka Undangan</button>
+  <div class="cover-inner reveal">
+    <h4>Undangan Pernikahan</h4>
+
+    <!-- GANTI NAMA MEMPELAI -->
+    <h1>Indra & Nia</h1>
+
+    <p>Kepada Yth:</p>
+    <h3>Tamu Undangan</h3>
+
+    <button onclick="openInvite()">Buka Undangan</button>
+  </div>
 </section>
 
-<!-- CONTENT -->
-<div id="content" class="hidden">
+<!-- ================= CONTENT ================= -->
+<section id="content" class="hidden">
 
-  <!-- OPENING -->
-  <section class="section">
-    <h2>Andi & Siti</h2>
-    <p>Dengan memohon rahmat Tuhan Yang Maha Esa, kami mengundang Bapak/Ibu/Saudara/i untuk hadir pada acara pernikahan kami.</p>
+  <!-- PEMBUKA -->
+  <section class="section reveal">
+    <p class="quote">
+      “Dan di antara tanda-tanda kekuasaan-Nya, Dia menciptakan pasangan agar kamu merasa tenteram.”
+    </p>
   </section>
 
-  <!-- EVENT -->
-  <section class="section">
-    <h3>Akad Nikah</h3>
-    <p>Sabtu, 20 Juli 2026</p>
-    <p>Pukul 09.00 WIB</p>
+  <!-- DETAIL ACARA -->
+  <section class="section reveal">
+    <h3>Detail Acara</h3>
 
-    <h3>Resepsi</h3>
-    <p>Sabtu, 20 Juli 2026</p>
-    <p>Pukul 11.00 WIB</p>
+    <!-- GANTI DETAIL ACARA -->
+    <p><strong>Hari / Tanggal:</strong> Minggu, 20 Juli 2026</p>
+    <p><strong>Waktu:</strong> 09.00 WIB</p>
+    <p><strong>Tempat:</strong> Gedung Serbaguna Jakarta</p>
   </section>
 
-  <!-- LOCATION -->
-  <section class="section">
-    <h3>Lokasi</h3>
-    <p>Gedung Serbaguna Jakarta</p>
-    <a href="https://maps.google.com" target="_blank">Buka Google Maps</a>
-  </section>
+  <!-- LOKASI -->
+  <section class="section reveal">
+    <h3>Lokasi Acara</h3>
 
-  <!-- RSVP -->
-  <section class="section">
-    <h3>Konfirmasi Kehadiran</h3>
-    <a href="https://wa.me/628xxxxxxxxxx" class="btn">RSVP via WhatsApp</a>
+    <!-- GANTI LINK MAPS -->
+    <a href="https://maps.google.com" target="_blank" class="btn">
+      Buka Google Maps
+    </a>
   </section>
 
   <!-- FOOTER -->
-  <footer>
-    <p>Terima kasih atas doa dan restunya</p>
+  <footer class="reveal">
+    <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir.</p>
+    <small>Powered by <strong>Undang.in</strong></small>
   </footer>
 
-</div>
+</section>
 
-<audio id="bg-music" loop>
-  <source src="assets/music/music.mp3" type="audio/mpeg">
+<!-- ================= MUSIC ================= -->
+<audio id="music" loop>
+  <source src="assets/music/music.mpeg" type="audio/mpeg">
 </audio>
+
+<button class="music-btn" onclick="toggleMusic()">🎵</button>
 
 <script src="script.js"></script>
 </body>
